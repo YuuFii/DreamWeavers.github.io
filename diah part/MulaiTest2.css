@@ -1,0 +1,111 @@
+html, body {
+    margin : 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: #E9EFFF;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.MainContent1 {
+    background-color: #3A00E5;
+    /* margin-top: -20px; */
+    padding-top: 50px;
+    padding-bottom: 120px;
+    color: white;
+    text-align: center;
+}
+
+.SubMainContent1 {
+    background-color: white;
+    align-self: center;
+    width: 820px;
+    height: 670px;
+    border-radius: 40px;
+    margin-top: -70px;
+    margin-bottom: 80px;
+    padding-top: 30px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+  }
+
+.circle-button {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid black; /* Warna awal border */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.circle-button.selected {
+    background-color: #007bff; /* Warna biru saat dipilih */
+    color: white;
+}
+
+.ButtonUtama {
+    display: flex;
+    margin-left: 30px;
+}
+
+.SubMainContent1 li {
+    margin-left: 30px;
+}
+
+.SubMainContent1 button {
+    margin-left: 370px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: #3A00E5;
+    padding: 10px 30px;
+    color: white;
+    border-style: none;
+    border-radius: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+    .SubMainContent1 {
+        width: 50%;
+        height: 200%;
+    }
+
+    .SubMainContent1 li {
+        padding-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .SubMainContent1 {
+        width: 50%;
+        height: 200%;
+    }
+
+    .SubMainContent1 li { 
+        padding-right: 20px;
+    }
+
+    .circle-button {
+        width: 15px;
+        height: 15px;
+    }
+    .ButtonUtama {
+        padding-right: 20px;
+    }
+}
+
+button.Selesai {
+    display: block; 
+    margin: 0 auto; 
+    margin-bottom: 30px;
+}

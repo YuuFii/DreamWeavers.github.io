@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tes Minat</title>
+    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="/public/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+
+</head>
+    <body>
+        <!-- Header Start -->
+    <header class="absolute top-0 left-0 z-30 flex w-full items-center bg-transparent">
+        <div class="container">
+          <div class="relative flex items-center justify-between">
+            <div class="px-4">
+              <a href="/public/main/landing-page-login.html" class="block py-6 text-lg font-bold text-primary"><img src="/public/assets/favicon_io/android-chrome-192x192.png" alt="" class="w-12"></a>
+            </div>
+            <div class="flex items-center px-4">
+              <button id="hamburger"name="hamburger"type="button"class="absolute right-4 block lg:hidden">
+                <span class="hamburger-line origin-top-left transition duration-300"></span>
+                <span class="hamburger-line transition duration-300"></span>
+                <span class="hamburger-line origin-bottom-left transition duration-300"></span>
+              </button>
+  
+              <nav id="nav-menu" class="hidden absolute py-5 bg-white
+              shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none lg:top-2">
+                  <ul class="block lg:flex">
+                      <li class="group">
+                          <a href="/public/main/landing-page-login.html" class="text-base text-black py-2 mx-8 flex group-hover:text-blue-700">Beranda</a>
+                      </li>
+                      <li class="group">
+                          <a href="/public/main/explore.html" class="text-base text-black py-2 mx-8 flex group-hover:text-blue-700">Explore</a>
+                      </li>
+                      <li class="group">
+                          <a href="/nico part/sumber.html" class="text-base text-black py-2 mx-8 flex group-hover:text-blue-700">Resource</a>
+                      </li>
+                      <li class="group relative dropdown">
+                        <a href="#home" class="text-base text-black py-2 mx-8 flex group-hover:text-blue-700" id="forum-dropdown" aria-expanded="false">Forum</a>
+                        <i class="ph ph-caret-down ml-2 hidden"></i>
+                        <i class="ph ph-caret-up ml-2 hidden"></i>
+                            <ul class="space-y-2 px-1 hidden lg:absolute bg-white top-0 mt-8 right-0 rounded-md py-2 lg:drop-shadow-lg dropdown-content">
+                                <li>
+                                    <a href="/nico part/forum-diskusi.html" class="hover:text-blue-700 font-medium text-sm">Forum Diskusi</a>
+                                </li>
+                                <li>
+                                    <a href="/nico part/forum-pribadi.html" class="hover:text-blue-700 font-medium text-sm">Forum Pribadi</a>
+                                </li>
+                            </ul>
+                    </li>
+                      <li class="group">
+                          <a href="/diah part/Home.html" class="text-base text-black py-2 mx-8 flex group-hover:text-blue-700">Tes Minat</a>
+                      </li>
+                      <li class="group">
+                          <a href="/nico part/profil.html" class="text-base text-black py-2 mx-8 flex group-hover:text-blue-700">Settings</a>                       
+                      </li>
+                      <li class="group">
+                          <a href="#">
+                              <div class="flex">
+                                  <a href="/nico part/profil.html"><img src="/public/assets/gambar/profile picture.png" class=" py-2 mx-8 my-2 flex text-white lg:my-0 w-[50px] hover:w-[53px]"></a>
+                                  <p class="py-7 items-center group-hover:text-blue-700 lg:hidden">Your Name</p>
+                              </div>  
+                          </a>   
+                      </li>
+                  </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- Header End -->
+    
+        <div class="MainContent1">
+            <div class="MainContent11">
+                <div>
+                    <img class="Orang3" src="MainH1.svg">
+                </div>
+                <div class="SubMainContent1">
+                    <h2>Kamu Bingung Apa Minat dan Bakatmu ?</h2>
+                    <p>Kami percaya bahwa setiap orang memeliki potensi untuk merencanakan masa depannya dengan sukses. Namun sayangnya, hanya beberapa orang dari mereka yang mampu memahami dirinya sendiri. <br><br>Disinilah kami akan membantu kalian
+                    <b>dalam merencanakan masa depan, sesuai dengan bakat, minat, dan juga kepribadian</p></b>
+                    <button class="MulaiTestUtama" onclick="showPopup()">Mulai Tes</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Konten pop-up -->
+        <!-- Overlay untuk latar belakang semi-transparan -->
+        <div id="overlay" class="popup-overlay"></div>
+
+        <!-- Konten pop-up -->
+        <div id="popup" class="popup-container">
+            <h2 class="h21">PERHATIAN</h2>
+            <img class="GambarPopUp1" src="PopUp1.svg" alt="">
+            <ol>
+                <li>Pilih jawaban yang paling mewakili diri anda</li>
+                <li>Tidak ada jawaban yang benar dan salah, maka jawablah dengan objektif</li>
+                <li>BIla sudah siap klik tombol mulai di bawah ini</li>
+            </ol>
+            <button class="button1" onclick="hidePopup(); showPopup2()">Selanjutnya</button>
+        </div>
+
+        <div id="popup2" class="popup-container">
+            <h2 class="h22">PERHATIAN</h2>
+            <img class="GambarPopUp2" src="PanduanJawaban1.svg" alt="">
+            <p>Pilih salah satu jawaban</p>
+            <img class="GambarPopUp22" src="ButtonJawaban.svg" alt="">
+            <br>
+            <button class="button2" onclick="hidePopup2(); showPopup3()">Selanjutnya</button>
+        </div>
+
+        <div id="popup3" class="popup-container">
+            <h2 class="h23">PERHATIAN</h2>
+            <img class="GambarPopUp3" src="GambarPopUp3.svg" alt="">
+            <p>Bila sudah siap klik tombol Mulai Tes di bawah ini</p>
+            <button class="button3" onclick="redirectToMulaiTest()">Mulai Tes</button>
+        </div>
+
+
+        <div class="MainContent2">
+            <h2>Apa Kata Mereka ?</h2>
+            <div class="Kotak">
+                <div class="Kotak1">
+                    <img class="Profil" src="Profil.svg" alt="">
+                    <div class="Gabungan">
+                        <p><b>Username</b></p>
+                        <p>Menurut saya tes minat dan bakat ini sangat membantu dalam menentukan pilihan masa depan </p>
+                    </div>
+                </div>
+                <div class="Kotak2">
+                    <img class="Profil" src="Profil.svg" alt="">
+                    <div class="Gabungan">
+                        <p><b>Username</b></p>
+                        <p>Menurut saya tes minat dan bakat ini sangat membantu dalam menentukan pilihan masa depan </p>
+                    </div>
+                </div>
+                <div class="Kotak3">
+                    <img class="Profil" src="Profil.svg" alt="">
+                    <div class="Gabungan">
+                        <p><b>Username</b></p>
+                        <p>Menurut saya tes minat dan bakat ini sangat membantu dalam menentukan pilihan masa depan </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="MainContent7">
+            <div class="Information">
+                <img class="GambarMainContent7_1"  src="GambarMainContent7.svg" alt="">
+            </div>
+
+            <div class="Information">
+                <ul>
+                    <li><h4>Learn More</h4></li>
+                    <li><a href="AboutUs.html">About Us</a></li>
+                    <li><a href="Expo.html">Eksplorasi Karir</a></li>
+                    <li><a href="Sumber.html">Sumber Belajar</a></li>
+                    <li><a href="Tes.html">Tes Minat & Bakat</a></li>
+                </ul>
+            </div>
+
+            <div class="Information">
+                <ul>
+                    <li><h4>Contact Us</h4></li>
+                    <li>Hotel Reservation: <b>123-456-7890</b></li>
+                    <li>Ticket Offie: <b>123-456-789C</b></li>
+                </ul>
+            </div>
+
+            <div class="Information">
+                <ul>
+                    <li><h4>Social Media</h4></li>
+                    <li><a href="instagram.html"><img src="instagram-logo.svg" alt=""></a></li>
+                    <li><a href="twitter.html"><img src="Path.svg" alt=""></a></li>
+                    <li><a href="facebook.html"><img src="bxl-facebook.svg" alt=""></a></li>
+                    <li><a href="youtube.html"><img src="youtube-logo.svg" alt=""></a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="SubMainContent7">
+            <hr>
+            <div class="Penutup">
+                <p>© 2019 Lift Media | All Rights Reserved</p>
+            </div>
+        </div>
+
+        <script>
+            // Fungsi untuk menampilkan pop-up
+            function showPopup() {
+                var overlay = document.getElementById('overlay');
+                var popup = document.getElementById('popup');
+                overlay.style.display = 'block';
+                popup.style.display = 'flex';
+                popup.style.flexDirection = 'column';
+                popup.style.alignItems = 'center';
+            }
+        
+            // Fungsi untuk menyembunyikan pop-up
+            function hidePopup() {
+                var overlay = document.getElementById('overlay');
+                var popup = document.getElementById('popup');
+                overlay.style.display = 'none';
+                popup.style.display = 'none';
+            }
+
+            function showPopup2() {
+                var overlay = document.getElementById('overlay');
+                var popup = document.getElementById('popup2');
+                overlay.style.display = 'block';
+                popup.style.display = 'flex';
+                popup.style.flexDirection = 'column';
+                popup.style.alignItems = 'center';
+            }
+        
+            // Fungsi untuk menyembunyikan pop-up
+            function hidePopup2() {
+                var overlay = document.getElementById('overlay');
+                var popup = document.getElementById('popup2');
+                overlay.style.display = 'none';
+                popup.style.display = 'none';
+            }
+
+            function showPopup3() {
+                var overlay = document.getElementById('overlay');
+                var popup = document.getElementById('popup3');
+                overlay.style.display = 'block';
+                popup.style.display = 'flex';
+                popup.style.flexDirection = 'column';
+                popup.style.alignItems = 'center';
+            }
+        
+            // Fungsi untuk menyembunyikan pop-up
+            function hidePopup3() {
+                var overlay = document.getElementById('overlay');
+                var popup = document.getElementById('popup3');
+                overlay.style.display = 'none';
+                popup.style.display = 'none';
+            }
+        </script>
+
+        <script>
+            function hidePopup3() {
+                document.getElementById("popup3").style.display = "none";
+            }
+
+            function redirectToMulaiTest() {
+                // Redirect to MulaiTest.html
+                window.location.href = "MulaiTest.html";
+            }
+        </script>
+
+        <script>
+            const menuIcon = document.getElementById("menu-icon");
+            const menuList = document.getElementById("nav-list");
+            const menuList2 = document.getElementById("nav-list-2");
+
+            menuIcon.addEventListener("click", () => {
+                menuList.classList.toggle("hidden");
+                menuList2.classList.toggle("hidden");
+            });
+        </script>
+        <script src="/public/js/script.js"></script>
+    </body>
+</html>

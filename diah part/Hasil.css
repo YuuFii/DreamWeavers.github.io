@@ -1,0 +1,372 @@
+html, body {
+    margin : 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: #E9EFFF;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.MainContent1 {
+    background-color: #3A00E5;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 130px;
+    text-align: center;
+}
+
+.MainContent2 {
+    display: flex;
+    align-self: center;
+    margin-top: -100px;
+    background-color: white;
+    width: 750px;
+    padding-left: 50px;    
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 30px;
+}
+
+.SubMainContent2 {
+    margin-left: 50px;
+}
+
+.Kotak {
+    display: flex;
+    justify-content: space-around;
+}
+
+.MainContent3 h2 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    padding-top: 60px;
+}
+
+.MainContent3 {
+    align-self: center;
+    background-color: white;
+    width: 800px;
+    border-radius: 30px;
+    height: 1500px;
+    margin-bottom: 80px;
+    margin-top: 30px;
+}
+
+.Kotak1 {
+    background-color: #E9EFFF;
+    width: 200px;
+    height: 200px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.Kotak1 p {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.Kotak2 {
+    background-color: #E9EFFF;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.Kotak2 p {
+    text-align: center;
+}
+
+.Kotak3 {
+    background-color: #E9EFFF;
+    width: 200px;
+    height: 200px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.Kotak3 p {
+    text-align: center;
+}
+
+.SubMainContent3 h2 {
+   margin-top: 0px;
+}
+
+.SubMainContent3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.SubMainContent3 p{
+    background-color: #E9EFFF;
+    width: 665px;
+    height: 270px;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    align-self: center;
+}
+
+.SubMainContent32 {
+    margin-top: 50px;
+}
+
+.SubMainContent32 SubH2 {
+    text-align: center;
+}
+
+.SUbH2 {
+    margin-top: 0px !important;
+    padding-top: 0px !important;
+}
+
+.SubMainContent33 p{
+    background-color: #E9EFFF;
+    width: 665px;
+    height: 120px;
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 20px;
+    align-self: center;
+}
+
+.SubMainContent33 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.MainContent3 button {
+    background-color: #3A00E5;
+    color: white;
+    padding: 8px 30px;
+    border-style: none;
+    border-radius: 20px;
+    margin: 30px auto; /* Center horizontally and add top margin */
+    display: flex;
+}
+
+.MainContent4 {
+    background-color: #3A00E5;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    align-items: end;
+    justify-content: end;
+}
+
+.Kesehatan {
+    width: 100px;
+    align-self: center;
+    margin-top: 20px;
+}
+
+.Investigasi {
+    width: 120px;
+    align-self: center;
+    margin-top: 20px;
+}
+
+.Sosial {
+    width: 120px;
+    align-self: center;
+    margin-top: 20px;
+}
+
+.Dokter {
+    width: 150px;
+    align-self: center;
+    margin-top: 10px;
+}
+
+.Perawat {
+    width: 150px;
+    align-self: center;
+    margin-top: 10px;
+}
+
+.Terapis {
+    width: 150px;
+    align-self: center;
+    margin-top: 10px;
+}
+
+.Kotak4 {
+    background-color: #E9EFFF;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    margin-left: 30px;
+}
+
+.Kotak4 p {
+    margin-top: 0;
+    text-align: center;
+}
+
+.Kotak5 {
+    background-color: #E9EFFF;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.Kotak5 p {
+    margin-top: 0;
+    text-align: center;
+}
+
+.Kotak6 {
+    background-color: #E9EFFF;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    margin-right: 30px;
+}
+
+.Kotak6 p {
+    margin-top: 0;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .MainContent3{
+        height: 1900%;
+    }
+    .MainContent2 {
+        width: 50%;
+        padding-right: 20px;
+    }
+
+    .MainContent3 {
+        width: 60%;
+    }
+
+    .SubMainContent3 p {
+        width: 70%;
+        padding-right: 20px;
+        height: 300%;
+        padding-bottom: 20px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .Kesehatan, .Investigasi, .Sosial {
+        width: 90%;
+    }
+
+    .Kotak1 p, .Sosial p {
+        margin-top: 14px;
+    }
+
+    .Kotak1, .Kotak2, .Kotak3 {
+        width: 20%;
+        height: 20%;
+        border-radius: 20px;
+    }
+
+    .Kotak1 p, .Kotak2 p, .Kotak3 p {
+        font-size: 13px;
+    }
+
+    .Dokter, .Perawat, .Terapis {
+        width: 90%;
+    }
+
+    .Kotak4, .Kotak5, .Kotak6 {
+        width: 20%;
+        height: 20%;
+        border-radius: 20px;
+    }
+
+    .Kotak4 p, .Kotak5 p, .Kotak6 p {
+        font-size: 13px;
+    }
+
+    .SubMainContent33 p {
+        width: 70%;
+        padding-right: 20px;
+        height: 300%;
+        padding-bottom: 20px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .MainContent2 {
+        display: table-column;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 30px;
+    }
+
+    .SubMainContent2 {
+        margin-left: 0;
+    }
+
+    .orangg {
+        align-self: center;
+    }
+
+    .Kotak1, .Kotak2, .Kotak3 {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: 50%;
+        height: 50%;
+        border-radius: 20px;  
+        align-self: center;
+    }
+
+    .Kotak4, .Kotak5, .Kotak6 {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: 50%;
+        height: 50%;
+        border-radius: 20px;  
+        align-self: center;
+    }
+
+    .Kotak1 p, .Kotak2 p, .Kotak3 p {
+        font-size: 13px;
+    }
+
+    .Kesehatan, .Investigasi, .Sosial {
+        width: 50%;
+ 
+    }
+
+    .Kotak {
+        flex-direction: column; 
+    }
+
+    .MainContent3 h2{
+        font-size: 20px;
+    }
+}

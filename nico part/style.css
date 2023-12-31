@@ -1,0 +1,123 @@
+.accordion .contentBx {
+    position: relative;
+    /* margin: 10px 20px; */
+}
+
+.accordion .contentBx .label {
+    position: relative;
+    /* padding: 10px; */
+    background: #4076FF;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px 10px 0 0;
+}
+
+.accordion .contentBx .label::before {
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+}
+
+.accordion .contentBx.active .label::before {
+    content: '-';
+}
+
+.accordion .contentBx .content {
+    position: relative;
+    background: #E4EBFF;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+    border-radius: 0 0 10px 10px;
+}
+
+.accordion .contentBx.active .content {
+    height: 150px;
+    padding: 10px;
+}
+
+.people-img {
+    max-width: 35%;
+    min-width: 300px;
+}
+
+#nav-list li a:hover {
+    color: rgb(200, 200, 200);
+    padding-bottom: 4px;
+    border-bottom: 2px solid rgb(200, 200, 200);
+}
+
+#forum-dropdown:hover {
+    border-bottom: none !important;
+    padding-bottom: 0 !important;
+}
+
+/* Style untuk setiap item dropdown */
+.dropdown-content a {
+    text-decoration: none;
+    display: block;
+    width: 100%; /* Tetapkan lebar agar tetap konsisten */
+    padding: 12px 16px; /* Atur padding */
+    text-align: center;
+}
+
+/* Style untuk hover item dropdown */
+.dropdown-content a:hover {
+    /* background-color: #f1f1f1; */
+    border-bottom: none !important;
+    padding: 12px 16px !important;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.tombol-telusuri {
+    transition: all 0.2s ease-in-out;
+}
+
+.tombol-telusuri:hover {
+    color: #d9d9d9;
+    text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+    .content {
+        width: 100%;
+    }
+
+    section>div>div {
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 768px) {
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    
+    .dropdown-content a {
+        padding: 12px 16px;
+        display: block;
+        text-align: left;
+    }
+    
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+        border-bottom: none !important;
+        padding: 12px 16px !important;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+}

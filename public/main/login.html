@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="/public/css/style.css" />
+    
+  </head>
+  <body class="bg-blue-500">
+   <section id="sign-up" class="py-20 lg:py-8 w-full">
+    <div class="container w-full items-center justify-center px-7">
+        <div class="flex flex-wrap">
+            <!--Image-->
+        <div class="image-sign-up w-1/2 hidden md:w-1/2 md:block md:right-0">
+            <h1 class="text-white text-5xl py-3">Welcome Back!</h1>
+            <h2 class="text-white text-3xl py-3">LOGIN NOW</h2>
+            <img src="/diah part/MainL1.svg" alt="" class="w-3/4 -pt-3">
+        </div>
+        <!--box-->
+            <div class="box bg-white w-full rounded-3xl px-6 shadow-2xl md:w-1/2 md:right-0">
+                <h1 class="text-center font-semibold text-4xl py-4">Login</h1>     
+                <div class="data pb-6">
+                    <p class="py-2">Username</p>
+                    <input type="text" id="full-name" class="py-1 border-2 rounded-full w-full border-slate-500 px-3" placeholder="empty">
+                    <p class="py-2">Password</p>
+                    <input type="text" id="full-name" class="py-1 border-2 rounded-full w-full border-slate-500 px-3" placeholder="empty">
+                    <a href="#forgot-password" class="text-blue-600 hover:text-blue-400 py-5 block">Forgot Password?</a>
+                </div>
+                <a href="/public/main/landing-page-login.html">
+                    <button class="bg-blue-600 rounded-full w-full px-9 py-2 mt-5 text-white hover:text-blue-600 hover:bg-blue-200 lg:mt-9 flex-wrap">
+                        Login
+                    </button>
+                </a>
+                
+                <button class="bg-blue-600 rounded-full w-full px-9 py-2 mt-5 text-white mb-6 hover:bg-blue-200 hover:text-blue-600 lg:mt-9 flex-wrap">
+                    <p>Login with Google</p> 
+                </button>
+                <p class="text-center py-3">Belum punya akun?<a href="/public/main/sign-up.html" class="text-blue-600 hover:text-blue-400"> Daftar</a></p>
+            </div>
+        </div>
+    </div>
+   </section>  
+    <script src="/public/js/script.js"></script>
+  </body>
+</html>
